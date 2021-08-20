@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header_section {
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color:darkorange;
+}
+p,h3,h1 {
+    color: #fff;
+}
+
+.section_2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 4rem;
+}
+.section_2, .info_short, .education_con {
+    background-color:#232c3d;
+}
+.links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.fab {
+    padding-left: 2rem;
+}
+.info_short {
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.image_con {
+    border-radius: 50%;
+    height: 400px;
+    width:200;
+}
+.education_con {
+    padding: 2rem;
+}
+.education_text {
+    text-align: center;
+}
+.personal_skills{
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: black; 
+}
+.programming_skills_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+
+}
+.programming_skills h3, .pskill p{
+    color:black;
+}
+
+li {
+    list-style-type: none;
+    text-decoration: none;
+}
+a:hover {
+    cursor: pointer;
+}
+p a {
+    text-decoration: none;
+}

@@ -3,7 +3,7 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
-
+/*section 1*/
 .header_section {
     padding: 1rem;
     display: flex;
@@ -12,10 +12,14 @@ body {
     justify-content: space-between;
     background-color:darkorange;
 }
+
 p,h3,h1 {
     color: #fff;
 }
-
+.webb a{
+    color:#fff
+}
+/*section 2*/
 .section_2 {
     display: flex;
     flex-direction: row;
@@ -23,6 +27,7 @@ p,h3,h1 {
     justify-content: space-around;
     padding: 4rem;
 }
+
 .section_2, .info_short, .education_con {
     background-color:#232c3d;
 }
@@ -38,7 +43,6 @@ p,h3,h1 {
     padding: 2rem;
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: space-around;
 }
 .image_con {
@@ -56,7 +60,7 @@ p,h3,h1 {
     height: 300px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     color: black; 
 }
 .programming_skills_container {
@@ -78,4 +82,96 @@ a:hover {
 }
 p a {
     text-decoration: none;
+}
+
+
+/*media query*/
+@media screen and (max-width: 400px) {
+  .programming_skills_container {
+     display: flex; 
+     flex-direction: row;
+  }
+}
+@media screen and (max-width: 600px) {
+  .header_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 4rem;  
+  }
+  .section_2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around; 
+  }
+  .img_con {
+      height: 130px;
+      width:130px;
+  }
+  .personal_skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2rem;
+  }
+    .links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 4rem;
+  }
+  .hr {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  .personal_skills{
+    box-sizing: border-box;
+    height: 400px;
+    width:300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: black; 
+  }
+}
+@media screen and (max-width: 800px) {
+  body {
+    background-color: olive;
+  }
+  .section_2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around; 
+  }
+  .img_con {
+      height: 130px;
+      width:130px;
+  }
+  .personal_skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 4rem;
+  }
+    .links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 4rem;
+  }
+   .info_short {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 4rem; 
+  }
+
 }

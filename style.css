@@ -235,3 +235,11 @@ p a {
     align-items: center;
   }
 }
+@media screen and (max-width: 400px) {
+   .section {
+     display: flex;
+   }
+   .programming_skills_container {
+     flex-direction: column;
+   }
+}

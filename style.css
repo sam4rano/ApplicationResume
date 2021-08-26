@@ -62,7 +62,9 @@ p,h3,h1 {
   padding-left: 1rem;
 }
 /*information section*/
-
+.info_container_card {
+  padding: 0.5rem;
+}
 .info_container {
     min-height: 50vh;
     padding: 1rem;

@@ -294,7 +294,6 @@ svg{
   opacity:0.5;
 }
 .overlay{
-  width: auto;
   margin:auto;
   z-index:2;
   opacity:1; 

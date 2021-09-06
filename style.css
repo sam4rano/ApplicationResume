@@ -59,7 +59,8 @@ p,h3,h1 {
     justify-content: space-between;
 }
 .fab {
-  padding-left: 1rem;
+  padding-left: 0.5rem;
+  color: var(--orange);
 }
 /*information section*/
 .info_container_card {
@@ -79,6 +80,7 @@ p,h3,h1 {
 .education_container {
     padding: 1rem;
     flex-direction: column;
+    max-height: 300px;
 }
 .education_text {
     padding-top: 1rem;
@@ -122,6 +124,11 @@ li {
 }
 a:hover {
     cursor: pointer;
+    color: #6495ed;
+}
+i:hover {
+    cursor: pointer;
+    color: #6495ed;
 }
 p a {
     text-decoration: none;
@@ -244,4 +251,89 @@ p a {
    .programming_skills_container {
      flex-direction: column;
    }
+}
+@media screen and (min-width: 800px) {
+   svg{
+    position:absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:100px;
+    margin:auto;
+    z-index:2;
+    opacity:0.5;
+  }
+  .section_card  {
+    min-height: 40vh;
+  }
+  .education_container {
+    min-height: 20vh;
+  }
+  .personal_skills {
+    min-height: 25vh;
+  }
+  .info_container {
+    min-height: 28vh;
+  }
+  .section_2 {
+    min-height: 40vh;
+  }
+}
+
+
+
+/*svg*/
+svg{
+  position:absolute;
+  left:50;
+  right:0;
+  top:100px;
+  bottom:0;
+  margin:auto;
+  z-index:2;
+  opacity:0.5;
+}
+
+.cls-1, .cls-4{
+  animation: r-rotate 2s  infinite alternate;
+  transform-origin:100% 100%;
+}
+
+.cls-2, .cls-3{
+  animation: l-rotate 2s  infinite alternate;
+  transform-origin:100% 0%;
+}
+
+.cls-2, .cls-4{
+  animation-delay:0.5s;
+}
+
+.l{
+  stroke:  #F72CAA;
+  fill: #F72CAA;
+  animation: l-rotate 2s alternate infinite;
+  transform-origin:100% 0%
+}
+
+@keyframes r-rotate{
+  from{
+    transform: rotate(270deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+@keyframes l-rotate{
+  from{
+    transform: rotate(270deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+.overlay{
+  width: auto;
+  margin:auto;
+  z-index:2;
+  opacity:1; 
 }
